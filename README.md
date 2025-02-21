@@ -33,9 +33,11 @@ app.use(hppSanitize());
 
 
 ## Histórico de versões
-v.1.0.1 — 2025-02-20: <small>Correção do tipo de retorno.</small>
+<small style="font-size: 10px">v.1.0.5 — 2025-02-21: Correção do tipo de retorno e problemas na externsão após transpilação.</small>
 
-v.1.0.0 — 2025-02-20: <small>Implementação de middleware para sanitizar parâmetros duplicados na query string.</small>
+<small style="font-size: 10px">v.1.0.1 — 2025-02-20: Correção do tipo de retorno.</small>
+
+<small style="font-size: 10px">v.1.0.0 — 2025-02-20: Implementação de middleware para sanitizar parâmetros duplicados na query string.</small>
   
 ## Licença
 Este projeto é licenciado sob a licença MIT.
