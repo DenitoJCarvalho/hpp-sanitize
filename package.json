@@ -1,6 +1,6 @@
 {
   "name": "hpp-sanitize",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "middleware para remover parâmetros de requisição duplicados, prevenindo ataques de \"Poluição de Parâmetros HTTP (HPP)\"",
   "engines": {
     "node": ">=22.13.0",
