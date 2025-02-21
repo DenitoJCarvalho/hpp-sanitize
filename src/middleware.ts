@@ -6,7 +6,7 @@ const logger = createLogger({
   transports: [new transports.Console()]
 });
 
-export function hppSanitize(request: Request, response: Response, next: NextFunction) {
+export function hppSanitize(request: Request, response: Response, next: NextFunction): void {
   const queryKeys = Object.keys(request.query);
 
   for (const key of queryKeys) {
