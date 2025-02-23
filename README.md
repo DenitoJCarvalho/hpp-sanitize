@@ -31,7 +31,7 @@ app.use(hppSanitize());
 ## Bugs
   - Se econtrar algum bug, abra uma issue no github para que possamos analisá-lo.
 
-## ChanggeLog
+## ChangeLog
   Para ver as versões e notas de release, acesse a página de [Releases](https://github.com/DenitoJCarvalho/hpp-sanitize/releases/tag/v.1.1.0).
 
 ## Licença
