@@ -34,7 +34,8 @@ app.use(hppSanitize());
 
 ## Histórico de versões
 <details>
-  <summary>v.1.0.6</summary>
+  <summary>v.1.1.0</summary>
+  <small style="font-size: 12px">relase: 2025-02-23</small>
   <ul>
    <li style="font-size: 12px">Inclusão da opção <code>block</code>: permite bloquear a requisição em caso de tentativa de ataque HPP. Por padrão, o middleware apenas sanitiza os parâmetros e regsitra o ocorrido.
   
@@ -58,6 +59,7 @@ app.use(hppSanitize());
 </details>
 <details>
   <summary>v.1.0.5</summary>
+  <small style="font-size: 12px">relase: 2025-02-20</small>
   <ul>
     <li style="font-size: 12px">Implementação de middleware para sanitizar parâmetros duplicados na query string.</li>
   <ul>
