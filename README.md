@@ -12,7 +12,7 @@ Esse tipo de situação pode causar comportamentos inesperados e expor dados que
 Com o middleware, a sanitização é realizada removendo parâmetros duplicados e gerando um log de aviso sempre que uma tentativa de ataque é detectada.
 
 ## Instalaçao
-Instale o pcaote utilizando o NPM:
+Instale o pacote utilizando o NPM:
 ```
 npm install hpp-sanitize 
 ```
