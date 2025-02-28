@@ -1,0 +1,64 @@
+.container-description {
+  width: 100%;
+  padding: 1rem;
+
+  &>div {
+    width: 100%;
+    margin-bottom: 2.5rem;
+
+    & h1 {
+      margin-bottom: 1.5rem;
+    }
+
+    &>h2 {
+      margin-bottom: 1.2rem;
+    }
+
+    &>p {
+
+      &>a {
+        font-weight: 600;
+      }
+    }
+
+    &>code {
+      border-radius: 0.5rem;
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem 0;
+      font-weight: 700;
+      display: flex;
+      background-color: var(--dark-blue-blur);
+    }
+  }
+}
+
+@media screen and (width >=48rem) {
+  .container-description {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (width >=56.25rem) {
+  .container-description {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (width >=64rem) {
+  .container-description {
+    padding: 0 3.5rem;
+  }
+}
+
+@media screen and (width >=75rem) {
+  .container-description {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (width >=90rem) {
+  .container-description {
+    padding: 0 5rem;
+  }
+}

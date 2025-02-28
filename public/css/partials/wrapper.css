@@ -1,0 +1,93 @@
+.wrapper {
+  width: 100dvw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "banner"
+    "description"
+    "donate"
+    "footer"
+  ;
+}
+
+.container-header {
+  grid-area: header;
+}
+
+.container-banner {
+  grid-area: banner;
+}
+
+.container-description {
+  grid-area: description;
+}
+
+.container-donate {
+  grid-area: donate;
+  background-color: aquamarine;
+}
+
+.container-footer {
+  grid-area: footer;
+}
+
+@media screen and (width >=37.5rem) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-areas:
+      "header header"
+      "banner banner"
+      "description description"
+      "donate donate"
+      "footer footer";
+  }
+}
+
+@media screen and (width >=56.25rem) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-areas:
+      "header header header"
+      "banner banner banner"
+      "description description description"
+      "donate donate donate"
+      "footer footer footer";
+  }
+}
+
+@media screen and (width >=64rem) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-areas:
+      "header header header header"
+      "banner banner banner banner"
+      "description description description description"
+      "donate donate donate donate"
+      "footer footer footer footer";
+  }
+}
+
+@media screen and (width >=75rem) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-areas:
+      "header header header header header"
+      "banner banner banner banner banner"
+      "description description description description description"
+      "donate donate donate donate donate"
+      "footer footer footer footer footer";
+  }
+}
+
+@media screen and (width >=90rem) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-areas:
+      "header header header header header header"
+      "banner banner banner banner banner banner"
+      "description description description description description description"
+      "donate donate donate donate donate donate"
+      "footer footer footer footer footer footer";
+  }
+}
