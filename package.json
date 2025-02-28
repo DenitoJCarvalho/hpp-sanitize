@@ -1,17 +1,27 @@
 {
   "name": "hpp-sanitize",
-  "version": "1.1.0",
+  "version": "1.3.3",
   "description": "middleware para remover parâmetros de requisição duplicados, prevenindo ataques de \"Poluição de Parâmetros HTTP (HPP)\"",
   "engines": {
     "node": ">=22.13.0",
     "npm": ">=9.6.5"
   },
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/esm/index.d.ts"
+    }
+  },
   "scripts": {
-    "build": "tsc",
-    "prepublish": "npm run build"
+    "build": "npm run esm && npm run cjs",
+    "prepublish": "npm run build",
+    "esm": "tsc --project tsconfig.json",
+    "cjs": "tsc --project tsconfig.cjs.json"
   },
   "keywords": [
     "hpp",
@@ -27,7 +37,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DenitoJCarvalho/hpp-sanitize.git",
+    "url": "git+https://github.com/DenitoJCarvalho/hpp-sanitize.git"
+  },
+  "bugs": {
     "issues": "https://github.com/DenitoJCarvalho/hpp-sanitize/issues"
   },
   "files": [
@@ -35,8 +47,10 @@
     "LICENSE",
     "README.md"
   ],
+  "peerDependencies": {
+    "express": "^4.21.2"
+  },
   "dependencies": {
-    "express": "^4.21.2",
     "typescript": "^5.7.3",
     "winston": "^3.17.0"
   },

@@ -1,1 +1,1 @@
-export { hppSanitize } from './middleware';
+export * from './middlewares/hppSanitize.middleware.js';
