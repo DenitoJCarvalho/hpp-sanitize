@@ -1,0 +1,18 @@
+.container-banner {
+  margin-bottom: 2.5rem;
+
+  & picture {
+    object-fit: cover;
+
+    & img {
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (width >=37.5rem) {
+  .container-banner {
+    height: 75vh;
+  }
+
+}
